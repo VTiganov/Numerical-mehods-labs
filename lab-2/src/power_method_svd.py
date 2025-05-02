@@ -4,7 +4,7 @@ def power_method_svd(A, max_iter=1000, tol=1e-6):
     """
     Возвращает (sigma, u, v) — наибольшее сингулярное число и соответствующие векторы для матрицы A.
     """
-    m, n = A.shape
+    _, n = A.shape
     # Инициализируем случайный вектор v
     v = np.random.randn(n)
     v /= np.linalg.norm(v)
